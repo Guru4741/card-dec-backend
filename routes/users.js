@@ -13,7 +13,7 @@ router.get('/login', function(req, res){
 	res.render('login');
 });
 
-// Regiser User
+// Regiser User from app
 router.post('/register', function(req, res){
 	var name = req.body.name;
 	var email = req.body.email;
