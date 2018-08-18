@@ -5,16 +5,20 @@
 	<title>Game</title>
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script src="/angular/angular.js"></script>
 </head>
 <body>
 	<div class="container">
       <div class="header clearfix">
         <nav>
           <ul class="nav nav-pills pull-right">
+            {{#if user}}
             <li role="presentation" class="active"><a href="/">Dashboard</a></li>
+            <li role="presentation"><a href="/users/logout">Logout</a></li>
+            {{else}}
             <li role="presentation"><a href="/users/login">Login</a></li>
             <li role="presentation"><a href="/users/register">Register</a></li>
-            <li role="presentation"><a href="/users/logout">Logout</a></li>
+            {{/if}}
           </ul>
         </nav>
         <h3 class="text-muted">Deck of Card: Web Game for OCD</h3>
