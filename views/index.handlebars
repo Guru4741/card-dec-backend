@@ -1,2 +1,27 @@
-<h2 class="page-header">Dashboard</h2>
-<p>Welcome to the Dashboard</p>
+<link rel="stylesheet" type="text/css" href="/css/cards.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+<h2 class="page-header">Deck of Cards</h2>
+<p>Welcome to the Game</p>
+	<main>
+	
+	<div class="cardContainer">
+		
+	</div>
+	<div class="cardHolders">
+		<div class="holder hearts" ondragover="allowDrop(event)" ondrop="drop(event)">
+		</div>
+		<div class="holder spades" ondragover="allowDrop(event)" ondrop="drop(event)">
+		</div>
+		<div class="holder diamond" ondragover="allowDrop(event)" ondrop="drop(event)">
+		</div>
+		<div class="holder club" ondragover="allowDrop(event)" ondrop="drop(event)">
+		</div>	
+	</div>
+	
+	<div class="restart">
+		<button class="btn btn-default" id="restartBtn">Restart</button>
+	</div>
+	</main>
+
+	<script type="text/javascript" src="/js/cards.js"></script>

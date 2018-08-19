@@ -1,4 +1,5 @@
 var express = require('express');
+var path = require('path');
 var router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
@@ -97,5 +98,7 @@ router.get('/logout', function(req, res){
 	req.flash('success_msg', 'You are logged out');
 	res.redirect('/users/login');	
 })
+
+
 
 module.exports = router;
