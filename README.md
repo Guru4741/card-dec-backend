@@ -5,12 +5,11 @@ Express
 MongoDB & Mongoose
 Passport.js Authentication
 
-
-Usage
-Installation
+Installation : 
 Install the dependencies
 
 $ npm install
+
 Run app
 
 $ node app
